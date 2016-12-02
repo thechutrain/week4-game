@@ -5,10 +5,16 @@ let userPoints = 0;
 let goalPoints = null;
 let lives = 9;
 
-let goal_MAX = 99;
+let goal_MAX = 67;
 let goal_MIN = 19;
-let kitten_MAX = 19;
+let kitten_MAX = 12;
 let kitten_MIN = 1;
+
+// cat audio files
+var sadCat_audio = new Audio("./assets/sounds/Sad-cat.mp3");
+var hissingCat_audio = new Audio("./assets/sounds/Cat-hissing.mp3");
+var meowCat_1_audio = new Audio("./assets/sounds/Cat-meow.mp3");
+var meowCat_2_audio = new Audio("./assets/sounds/Cat-meow-2.mp3");
 
 
 // Functions
@@ -50,6 +56,8 @@ let kitten_MIN = 1;
 $(document).ready(function(){
   initializeGame();
   displayMessage("Let's play!");
+  // sadCat_audio.play();
+
 });
 
 $(".kitten").on("click", function(){
@@ -62,14 +70,18 @@ $(".kitten").on("click", function(){
   //3) check if user won OR user lost OR game is not over ...
   if(userPoints < goalPoints && lives > 0){
     //3a) if game is not over, return!
+    // normal meow:
+    meowCat_1_audio.play();
     return false;
   } else if(userPoints === goalPoints && lives >0){
     //3b) if user won --> increment wins, display they won, & reset game
     displayMessage("You won");
+    meowCat_2_audio.play();
     totalWins ++;
   } else{
     //3c) if user lost --> increment losses, display they lost & reset game
     displayMessage("You lost");
+    sadCat_audio.play();
     totalLosses ++;
   }
  // 4) reset game
