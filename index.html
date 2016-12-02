@@ -2,12 +2,48 @@
 <head>
   <meta charset="UTF-8">
   <title>Week 4 game</title>
-  <link rel="stylesheet" href="assets/css/reset.css">
+  <!-- <link rel="stylesheet" href="assets/css/reset.css"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-<h1>Testing 123</h1>
+<!-- <h1>Testing 123</h1> -->
+
+<div class="container">
+  <div class="row kitten-container">
+    <div class="col-sm-3">
+       <div class="kitten"><img class="img-responsive" src="http://placekitten.com/g/200/200" alt="test"></div>
+    </div>
+    <div class="col-sm-3"> 
+      <div class="kitten"><img class="img-responsive" src="http://placekitten.com/g/300/300" alt="test"></div>
+    </div>
+    <div class="col-sm-3"> 
+      <div class="kitten"><img class="img-responsive" src="http://placekitten.com/g/400/400" alt="test"></div>
+    </div>
+    <div class="col-sm-3"> 
+      <div class="kitten"><img class="img-responsive" src="http://placekitten.com/g/600/600" alt="test"></div>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="row game-console">
+    <div class="col-sm-3"> 
+      <p>Total wins: <span id="totalWins"></span></p>
+      <p>Total losses: <span id="totalLosses"></span></p>
+    </div>
+    <div class="col-sm-3"> 
+      <p>User Points: <span id="userPoints"></span></p> 
+      <p>Kitten Lives: <span id="lives"></span></p> 
+    </div>
+    <div class="col-sm-3">
+      <p> You need to get <span id="goalPoints"></span> catnip points!</p>
+
+    </div>
+  </div>
+
+</div>
 
 
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
