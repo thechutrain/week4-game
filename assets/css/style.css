@@ -1,15 +1,4 @@
-/* Prototyping & debugging */
-.container{
-  /*border: 1px solid black;*/
-}
-
-.header {
-  /*border: 2px dashed blue;*/
-}
-
-/*
-* --- Typographic styling --------
-*/
+/*--- Typographic styling --------*/
 h2 {
 font-family: 'Luckiest Guy', cursive;
 font-size: 4em;
