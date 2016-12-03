@@ -61,19 +61,19 @@ $(document).ready(function(){
 });
 
 $(".kitten").on("click", function(){
-  //0) subtract the lives
   lives --;
   // 1) get the points associated with the cat & add to the users points
   userPoints += $(this).data("points");
   //2) update the display
   updateView();
   //3) check if user won OR user lost OR game is not over ...
-  if(userPoints < goalPoints && lives > 0){
+  if(userPoints < goalPoints && lives >= 0){
     //3a) if game is not over, return!
     // normal meow:
     meowCat_1_audio.play();
+    //3b) subtract a life
     return false;
-  } else if(userPoints === goalPoints && lives >0){
+  } else if(userPoints === goalPoints && lives >= 0){
     //3b) if user won --> increment wins, display they won, & reset game
     displayMessage("You won");
     meowCat_2_audio.play();
@@ -86,7 +86,7 @@ $(".kitten").on("click", function(){
   }
  // 4) reset game
  initializeGame();
- displayMessage("New Game");
+ // displayMessage("New Game");
 })
 
 

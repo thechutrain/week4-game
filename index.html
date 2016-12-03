@@ -4,46 +4,65 @@
   <title>Week 4 game</title>
   <!-- <link rel="stylesheet" href="assets/css/reset.css"> -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat|Neuton" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata|Luckiest+Guy|Montserrat|Neuton" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-<!-- <h1>Testing 123</h1> -->
+<div class="fluid-container header-container">
 
-<div class="container">
+  <div class="row directions">
+    <div class="col-xs-10 col-xs-offset-1 header"> 
+      <h2 class="text-center">Kitten-nip Game</h2>
+      <h4>Directions: </h4>
+      <p> These kittens need your help! Like so many helpless baby mammals, they too have basic needs, desires and dreams. Of course this means catnip for these kittens ... give them the proper dosage within their 9 lives. Give them too little and they won't love you, give them too much and they'll burst into flames!</p>
+
+      <p id="text-small">*no kittens were hurt in the development of this application</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="fluid-container game-container">
   <div class="row kitten-container">
-    <div class="col-sm-3">
-       <div class="kitten"><img class="img-responsive" src="http://placekitten.com/g/200/200" alt="test"></div>
+    <div class="col-xs-3">
+       <div class="kitten"><img class="img-responsive" src="http://placekitten.com/700/700" alt="test"></div>
     </div>
-    <div class="col-sm-3"> 
-      <div class="kitten"><img class="img-responsive" src="http://placekitten.com/g/300/300" alt="test"></div>
+    <div class="col-xs-3"> 
+      <div class="kitten"><img class="img-responsive" src="http://placekitten.com/300/300" alt="test"></div>
     </div>
-    <div class="col-sm-3"> 
-      <div class="kitten"><img class="img-responsive" src="http://placekitten.com/g/400/400" alt="test"></div>
+    <div class="col-xs-3"> 
+      <div class="kitten"><img class="img-responsive" src="http://placekitten.com/800/800" alt="test"></div>
     </div>
-    <div class="col-sm-3"> 
-      <div class="kitten"><img class="img-responsive" src="http://placekitten.com/g/600/600" alt="test"></div>
+    <div class="col-xs-3"> 
+      <div class="kitten"><img class="img-responsive" src="http://placekitten.com/600/600" alt="test"></div>
     </div>
   </div>
 
-  <hr>
+  <!-- <hr> -->
 
   <div class="row game-console">
     <div class="col-sm-3"> 
-      <p>Total wins: <span id="totalWins"></span></p>
-      <p>Total losses: <span id="totalLosses"></span></p>
+      <p>Total wins: <span id="totalWins" class="bold-text"></span></p>
+      <p>Total losses: <span id="totalLosses" class="bold-text"></span></p>
     </div>
     <div class="col-sm-3"> 
-      <p>User Points: <span id="userPoints"></span></p> 
-      <p>Kitten Lives: <span id="lives"></span></p> 
+      <p>User Points: <span id="userPoints" class="bold-text"></span></p> 
+      <p>Lives Left: <span id="lives" class="bold-text"></span></p> 
     </div>
     <div class="col-sm-6">
-      <p> You need to get <span id="goalPoints"></span> catnip points!</p>
-      <p> Message Console: <span id="messages"></span></p>
+      <p> You need to get <span id="goalPoints" class="bold-text"></span> catnip points!</p>
+      <p> Message Console: <span id="messages" class="bold-text"></span></p>
     </div>
 
   </div>
 
+</div>
+
+
+<div class="fluid-container footer-container">
+  <footer class="footer text-center">Made by: <a id="link" href="https://bootstrap-portfolio-rcb.herokuapp.com/"><span class="fancy-text">Alan Chu</span></a></footer>
 </div>
 
 

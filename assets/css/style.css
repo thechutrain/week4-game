@@ -1,4 +1,118 @@
 /* Prototyping & debugging */
 .container{
-  border: 1px solid black;
+  /*border: 1px solid black;*/
 }
+
+.header {
+  /*border: 2px dashed blue;*/
+}
+
+/*
+* --- Typographic styling --------
+*/
+h2 {
+font-family: 'Luckiest Guy', cursive;
+font-size: 4em;
+}
+
+h4 {
+    /*font-family: 'Neuton', serif;*/
+  /*font-family: 'Inconsolata', monospace;*/
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 2em;
+}
+* {
+/*font-family: 'Montserrat', sans-serif;*/
+/*font-family: 'Neuton', serif;*/
+/*font-family: 'Luckiest Guy', cursive;*/
+font-family: 'Inconsolata', monospace;
+}
+
+.header-container * p {
+  font-size: 1.5em;
+  /*color: red;*/
+}
+
+.bold-text {
+  font-weight: 600;
+  font-size: 1.5em;
+}
+
+.fancy-text{
+  font-family: 'Luckiest Guy', cursive;
+  font-weight: 100;
+  letter-spacing: 0.2em;
+  color: black;
+}
+
+.fancy-text:hover, .fancy-text:focus {
+  color: #468966;
+}
+
+#text-small {
+  font-size: 0.75em;
+  color: red;
+}
+
+  /*
+  * --- anchor tags --------
+  */
+  a {
+    text-decoration: none;
+  }
+
+  a:hover, a:focus {
+      color: white;
+      text-decoration: none;
+  }
+
+/*
+* --- Kitten Image Styling --------
+*/
+
+.kitten {
+  padding: 0.3em;
+  background-color: #8E2800;
+  border-radius: 0.3em;
+}
+
+.kitten > img {
+  /*border-radius: 5em;*/
+  /*background-color: #8E2800;*/
+  margin: 0 auto;
+  
+}
+
+.kitten:hover {
+  /*border-radius: 50%;*/
+  background-color: #468966;
+  /*background-color: #B64926;*/
+}
+/*
+* --- Coloring --------
+*/
+/*.fluid-container{
+
+}*/
+
+.header-container{
+  border-bottom: 3px solid #8E2800;
+  background-color: #FFF0A5; 
+  padding: 1em;
+}
+
+.game-container{
+    border-bottom: 3px solid #8E2800;
+    background-color: #FFB03B;  
+    padding: 3em;
+}
+
+  .kitten-container {
+    margin-bottom: 2em;
+  }
+
+.footer-container {
+    background-color: #FFF0A5;
+    padding: 3em;
+}
+
